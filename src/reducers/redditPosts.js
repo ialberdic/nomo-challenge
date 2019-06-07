@@ -6,7 +6,7 @@ export default function recipeReducer(state = initialState, action) {
 
   switch (action.type) {
     
-    case 'RECIPES_REPLACE': {
+    case 'GET_REDDIT_POSTS': {
       let redditPosts = [];
       
       // Pick out the props I need
