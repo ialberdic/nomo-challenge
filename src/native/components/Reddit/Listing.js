@@ -29,12 +29,13 @@ const RedditPostsListing = ({
   const onPress = item => Actions.reddit({ match: { params: { id: String(item.id) } } });
 
   const getDaysAgo = (item) => {
-    const currentDate = new Date();
-    const utcSeconds = item.created;
-    const PostDate = new Date(0);
-    PostDate.setUTCSeconds(utcSeconds);
-    return currentDate.getDate() - PostDate.getDate() === 0 ? 'Today'
-      : currentDate.getDate() - PostDate.getDate()`${' days ago'}`
+    //const currentDate = new Date();
+    //const utcSeconds = item.created;
+    //const PostDate = new Date(0);
+    //PostDate.setUTCSeconds(utcSeconds);
+    //return currentDate.getDate() - PostDate.getDate() === 0 ? 'Today'
+     // : currentDate.getDate() - PostDate.getDate()`${' days ago'}`
+    return 'Today';
   }
 
   return (
