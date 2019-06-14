@@ -20,10 +20,5 @@ yarn install (Please, be aware npm install may not work properly)
 
 If you face any issue; remove yarn.lock and node_modules then yarn install
 
-## Trouble
-
-Created at property has changed the format suddenly from today Thursday on 6th June. Yesterday, it worked like a charm.
-
-I will have a look later
 
 
