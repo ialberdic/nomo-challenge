@@ -19,7 +19,7 @@ const RedditPostsListing = ({
 }) => {
 
   // Loading
-  if (loading) return <Loading />;
+  if (loading && !redditPosts.length) return <Loading />;
 
   // Error
   if (error) return <Error content={error} />;

@@ -6,11 +6,12 @@ export default function recipeReducer(state = initialState, action) {
 
   switch (action.type) {
     
-    case 'RECIPES_REPLACE': {
+    case 'GET_REDDIT_POSTS': {
       let redditPosts = [];
       
       // Pick out the props I need
       if (action.data && typeof action.data === 'object') {
+        console.log('refresh when pull');
         redditPosts = action.data.data.children.map((item, index) => ({
           id: item.data.author_fullname+index,
           author: item.data.author_fullname,
